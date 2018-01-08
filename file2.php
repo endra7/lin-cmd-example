@@ -5,7 +5,12 @@ function sing($lyrics, $voice){
 }
 }
 
-function dance($songs, $steps){}
+function dance($songs, $steps){
+ if($songs.canDance() && $steps.isValid())
+{ 
+ Dancer.move($steps);
+ }
+}
 
 function play($dialog, $theme, $voice, $songs){}
 ?>
