@@ -1,5 +1,9 @@
 <?php
-function sing($lyrics, $voice){}
+function sing($lyrics, $voice){
+ if (!$lyrics.isEmpty() && $voice.isAwesome()){
+   singText($lyrics).config($voice);
+}
+}
 
 function dance($songs, $steps){}
 
