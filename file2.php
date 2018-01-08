@@ -5,7 +5,11 @@ function sing($lyrics, $voice){
 }
 }
 
-function dance($songs, $steps){}
+function dance($songs, $steps){
+  while($songs.isPlaying()){
+   Dancer.dance($steps);
+}
+}
 
 function play($dialog, $theme, $voice, $songs){}
 ?>
