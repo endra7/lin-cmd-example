@@ -7,9 +7,10 @@ function sing($lyrics, $voice){
 
 function dance($songs, $steps){
   while($songs.isPlaying()){
-   Dancer.dance($steps);
+    if($songs.canDance() && $steps.isValid())
+{ 
+ Dancer.move($steps);
 }
 }
-
 function play($dialog, $theme, $voice, $songs){}
 ?>
