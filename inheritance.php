@@ -1,17 +1,17 @@
 <?php
  echo "<html><head><title>Inheritance</title></head><body>
 	<form method = 'post' action = 'inheritance.php'>
-	Name : <input type = 'text' name = 'username' size='30'><br>
-	Password : <input type = 'password' name = 'userpassword' size='30'><br>
-	Email : <input type = 'text' name = 'useremail' size = '30'><br>
-	Address: <input type = 'text' name='useraddress' size ='30'><br>
+	Name : <input type = 'text' name = 'uname' size='30'><br>
+	Password : <input type = 'password' name = 'upassword' size='30'><br>
+	Email : <input type = 'text' name = 'uemail' size = '30'><br>
+	Address: <input type = 'text' name='uaddress' size ='30'><br>
 	<input type = 'submit' value = 'Save'>
 	</form><br><hr></body></html>";
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
  $obj = new Subscriber;
- $obj->addSubscriber($_POST['username'],$_POST['userpassword'],$_POST['useremail'],$_POST['useraddress']);
+ $obj->addSubscriber($_POST['uname'],$_POST['upassword'],$_POST['uemail'],$_POST['uaddress']);
  $obj->showInfo();
 
  class User  //primary class
