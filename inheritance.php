@@ -29,8 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 		}
 	 function showInfo()
 		{
-		 echo "Name: " . $this->name;
-		 echo "Password: " . $this->password;
+		 echo "Name: " . $this->name . "<br>";
+		 echo "Password: " . $this->password . "<br>";
 		}
 	} //end of user class
 
@@ -52,8 +52,8 @@ class Subscriber extends User
 	 function showInfo()
 		{
 		 parent::showInfo();
-		 echo "Email:" . $this->email;
-		 echo "Address:" . $this->address;
+		 echo "Email:" . $this->email . "<br>";
+		 echo "Address:" . $this->address . "<br>";
 		}
 	}//end of Subscriber class
 
