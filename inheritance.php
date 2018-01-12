@@ -10,9 +10,9 @@
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
- $obj = new Subscriber;
- $obj->addSubscriber($_POST['uname'],$_POST['upassword'],$_POST['uemail'],$_POST['uaddress']);
- $obj->showInfo();
+ $subs = new Subscriber;
+ $subs->addSubscriber($_POST['uname'],$_POST['upassword'],$_POST['uemail'],$_POST['uaddress']);
+ $subs->showInfo();
 
  class User  //primary class
 	{
