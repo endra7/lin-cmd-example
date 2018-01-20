@@ -24,7 +24,7 @@
 		 echo "Uploaded image '$name' : <br>";
 		 echo "<img src = '$name' width=400 height=400>";
 		}
-	 else echo "'$name' ois not an accepted image file";
+	 else echo "'$name' is not an accepted image file";
 	}
-	else echo "No imagae";
+	else echo "No imaga";
 ?>
